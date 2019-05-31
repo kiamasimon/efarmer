@@ -1,0 +1,31 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="col-xs-12">
+    <div class="card">
+        <div class="card-header">
+            <strong>Add New Product</strong>
+        </div>
+        <div class="card-body">
+    <div class="row">
+            <div class="col-md-8">
+              <div class="demo-form-wrapper">
+                <form class="form form-horizontal"  method="post" action="{% url 'Accountant:new_stock' %}">
+                    {% csrf_token %}
+
+                  <div class="form-group">
+                    <label class="col-sm-3 control-label" for="form-control-1">Stock Title</label>
+                    <div class="col-sm-9">
+                      <input id="name" name="name" class="form-control" type="text">
+                    </div>
+                  </div>
+                    <button class="btn btn-success pull-right" type="submit">Create</button>
+                </form>
+              </div>
+            </div>
+    </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
