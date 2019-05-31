@@ -1,4 +1,4 @@
-# efarmer
+# Efarmer
 Django E-FARMER DEMO
 
 ## Setting up
@@ -12,4 +12,4 @@ Django E-FARMER DEMO
       Use:
         pip install -r requirements.txt to install the projects requirements including django
       To run your development server, use:
-      
+        python manage.py runserver
